@@ -5,7 +5,7 @@ const cors = require('cors');
 const app = express()
 // Middleware to serve static files from the 'public' directory
  const corsOption = {
-  origin: " https://code-review-l5qj.vercel.app/ " ,
+  origin: " https://code-review-l5qj.vercel.app" ,
   methods: ["GET" , "POST" , "PUT" , "DELETE"] ,
   allowedHeader : ["Content-Type", "Authorization"],
  };
@@ -19,6 +19,7 @@ app.use(express.json());
 app.use('/ai' , aiRoutes);
 
 module.exports = app
+
 
 
 
